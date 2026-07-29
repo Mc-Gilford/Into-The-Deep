@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FishManager : MonoBehaviour
 {
-    private float baseSpeed = 1.0f;
+    [SerializeField] private float baseSpeed = 1.0f;
     public float speedBoost;
     private FishSpawner fishSpawner;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,4 +22,6 @@ public class FishManager : MonoBehaviour
     {
         
     }
+
+
 }

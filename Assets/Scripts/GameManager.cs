@@ -3,7 +3,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     
-    public FishSpawner fishSpawner;
+    private FishSpawner fishSpawner;
     
     [SerializeField] private float timeBeforeHelp = 60f;
 
