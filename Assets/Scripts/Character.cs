@@ -58,9 +58,9 @@ public class Character : MonoBehaviour
         }
 
 
-        if(this.health<0)
+        if(this.health<=0)
         {
-            audioSource.PlayOneShot();
+            die();
         }
     }
     protected virtual void die()
