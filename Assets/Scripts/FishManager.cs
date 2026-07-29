@@ -13,7 +13,7 @@ public class FishManager : MonoBehaviour
     }
 
     void GetBoost(){
-        speedBoost = fishSpawner.speedBoost
+        speedBoost = fishSpawner.speedBoost;
         baseSpeed += speedBoost; 
     }
 

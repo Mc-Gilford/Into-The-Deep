@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float timeBeforeHelp = 60f;
 
     [SerializeField] private string timeText;
+
+    private int fishCount =0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +19,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        fishCount = FindObjectsByType<FishController>(FindObjectsSortMode.None).Length;
+        fishCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
         if(fishCount == 0){
             fishSpawner.NewWave();
         }

@@ -10,7 +10,7 @@ public class FishSpawner : MonoBehaviour
     public List<GameObject> fishPrefabs;
     [SerializeField] private int numberFish=1;
     [SerializeField] private int wave=0;
-    public float speedboost = 0f;
+    public float speedBoost = 0f;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -36,11 +36,10 @@ public class FishSpawner : MonoBehaviour
         for(int f=0; f<numberFish; f++){
 
             GameObject newFish = FishToSpawn();
-            newFish.
             Instantiate(newFish,SpawnPosition(),newFish.transform.rotation);            
 
         }
-            speedboost += 0.2f;
+            speedBoost += 0.2f;
     }
 
     private GameObject FishToSpawn(){
