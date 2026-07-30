@@ -1,4 +1,7 @@
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +12,7 @@ public class GameManager : MonoBehaviour
     
     [SerializeField] private float timeBeforeHelp = 90f;
 
+    public TextMeshProUGUI timerDisplay;
 
     private bool isAlive = true;
 
@@ -41,6 +45,7 @@ public class GameManager : MonoBehaviour
         int seconds = Mathf.FloorToInt(timeBeforeHelp % 60);
 
         timerText = string.Format("{0:00}:{1:00}", minutes,seconds);
+        timerDisplay.text = "Time before rescue: "+timerText;
         Debug.Log(timerText);
 
     }
