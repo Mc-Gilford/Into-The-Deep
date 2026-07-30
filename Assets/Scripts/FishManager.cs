@@ -19,7 +19,7 @@ public class FishManager : Character
         fishSpawner = GameObject.Find("FishSpawner").GetComponent<FishSpawner>();
         GetBoost();
         setMaxHealth(lifeLevel);
-        
+        setHealth();
     }
 
     void GetBoost(){
