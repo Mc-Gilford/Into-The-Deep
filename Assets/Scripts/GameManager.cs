@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
         timerText = string.Format("{0:00}:{1:00}", minutes,seconds);
         timerDisplay.text = "Time before rescue: "+timerText;
         //resultText.text = "Time before rescue: "+timerText;
-        Debug.Log(timerText);
+        //Debug.Log(timerText);
 
         if (gameOver || victory)
         {
