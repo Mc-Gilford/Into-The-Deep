@@ -5,7 +5,7 @@ public class MainMenuManager : MonoBehaviour
 {
     // Cargar la escena del juego
     public void PlayGame(){
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Loading");
     }
 
     //cargar la escena del tutorial

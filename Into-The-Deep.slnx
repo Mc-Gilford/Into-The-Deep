@@ -1,4 +1,6 @@
 ﻿<Solution>
+  <Project Path="Dypsloom.CharacterController.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Dypsloom.Shared.Utility.csproj" />
 </Solution>
