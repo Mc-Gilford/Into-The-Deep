@@ -3,7 +3,7 @@ using System.Collections;
 
 public class FishManager : Character
 {
-    [SerializeField] private float baseSpeed = 20.0f;
+    [SerializeField] private float baseSpeed = 30.0f;
     public float speedBoost;
     private FishSpawner fishSpawner;
     private GameManager gameManager;
