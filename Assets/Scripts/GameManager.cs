@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
         treeHits.SetActive(true);
         twoHits.SetActive(false);
         oneHit.SetActive(false);
+        Debug.Log("Empezando Juego");
     }
 
     // Update is called once per frame
@@ -115,12 +116,14 @@ public class GameManager : MonoBehaviour
 
     public void reloadScene()
     {
+        Debug.Log("Regresar");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void GoToMenu()
     {
-        SceneManager.LoadScene(0);
+        Debug.Log("Regresar 2");
+        SceneManager.LoadScene("MainMenu");
     }
 
 }
