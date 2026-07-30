@@ -54,13 +54,31 @@ public class PlayerController : Character
     }
     public void Driving()
     {
-        Vector2 moveInput = controls.Player.Move.ReadValue<Vector2>();
+        /*Vector2 moveInput = controls.Player.Move.ReadValue<Vector2>();
         float forwardInput = moveInput.y; //Moverse al frente
         rb.AddRelativeForce(Vector3.forward*moveSpeed*forwardInput);
         transform.Rotate(Vector3.up*Time.deltaTime*rotationSpeed*moveInput.x);
-        verticalMovement();
+        verticalMovement();*/
+        Vector2 moveInput = controls.Player.Move.ReadValue<Vector2>();
+
+        float forwardInput = moveInput.y;
+
+        rb.AddRelativeForce(
+            Vector3.forward * moveSpeed * forwardInput,
+            ForceMode.Force
+        );
+
+        Quaternion rotation = Quaternion.Euler(
+            0f,
+            rotationSpeed * moveInput.x * Time.fixedDeltaTime,
+            0f
+        );
+
+        rb.MoveRotation(rb.rotation * rotation);
+
+        VerticalMovement();
     }
-    public void verticalMovement(){
+    public void VerticalMovement(){
          verticalInput = 0f;
         if (Keyboard.current.qKey.isPressed)//Bajar
         {
@@ -70,7 +88,9 @@ public class PlayerController : Character
         {
             verticalInput =-1f;
         }
-        rb.AddRelativeForce(Vector3.up*verticalSpeed*verticalInput);
+        rb.AddForce(
+        Vector3.up * verticalSpeed * verticalInput,
+        ForceMode.Force);
     }
     public void Attack()
     {

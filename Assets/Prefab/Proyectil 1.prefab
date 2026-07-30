@@ -146,4 +146,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileMovement
   missileSpeed: 100
-  lifeTime: 30
+  lifeTime: 20
