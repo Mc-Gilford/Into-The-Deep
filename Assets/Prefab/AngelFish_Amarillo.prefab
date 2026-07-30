@@ -8,55 +8,68 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.3999205
+      value: 6.3182645
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.96
+      value: 11.219893
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.348249
+      value: 2.5020576
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - target: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       propertyPath: m_Name
       value: AngelFish_Amarillo
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - target: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 5866666021909216657, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - target: {fileID: 5866666021909216657, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: d5ae61baf640f8e4faab01ef89756c38, type: 2}
@@ -64,19 +77,23 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       insertIndex: -1
       addedObject: {fileID: 2098472158487719958}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       insertIndex: -1
       addedObject: {fileID: 8067456049071037106}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b,
+        type: 3}
       insertIndex: -1
       addedObject: {fileID: 7648945596923067308}
   m_SourcePrefab: {fileID: 100100000, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
 --- !u!1 &7290738020081696288 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b,
+    type: 3}
   m_PrefabInstance: {fileID: 7632631908532896625}
   m_PrefabAsset: {fileID: 0}
 --- !u!65 &2098472158487719958
@@ -98,8 +115,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.60709476, y: 1.306292, z: 1.4812045}
-  m_Center: {x: -0.02089262, y: -0.15314603, z: 0.014354467}
+  m_Size: {x: 2.6817837, y: 2.727469, z: 6.5064855}
+  m_Center: {x: 0.040330887, y: 0.5574424, z: 0.7886684}
 --- !u!54 &8067456049071037106
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -140,10 +157,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishManager
   audioSource: {fileID: 0}
-  attackSound: {fileID: 0}
   hurtSound: {fileID: 0}
   deathSound: {fileID: 0}
-  attackEffect: {fileID: 0}
   hitEffect: {fileID: 0}
   deathEffect: {fileID: 0}
   baseSpeed: 20
