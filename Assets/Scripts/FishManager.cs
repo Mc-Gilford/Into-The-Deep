@@ -62,6 +62,7 @@ public class FishManager : Character
             case "Missil":
                 Debug.Log("Auch");
                 takeDamage(2);
+                Destroy(collision.gameObject);
                 break;
         }
     }
