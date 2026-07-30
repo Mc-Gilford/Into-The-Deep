@@ -7,12 +7,10 @@ public class Character : MonoBehaviour
     private int maxHealth;
     [Header("Audio")]
     [SerializeField] protected AudioSource audioSource;
-    [SerializeField] protected AudioClip attackSound;
     [SerializeField] protected AudioClip hurtSound;
     [SerializeField] protected AudioClip deathSound;
 
     [Header("Particles")]
-    [SerializeField] protected ParticleSystem attackEffect;
     [SerializeField] protected ParticleSystem hitEffect;
     [SerializeField] protected ParticleSystem deathEffect;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,7 +27,7 @@ public class Character : MonoBehaviour
     
     public void setMaxHealth(int lifeLevel)
     {
-        this.health = lifeLevel;    
+        this.maxHealth = lifeLevel;    
     }
     public void setDamage(int damageLevel)
     {
