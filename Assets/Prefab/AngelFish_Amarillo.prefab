@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7632631908532896625
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.3999205
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.96
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.348249
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      propertyPath: m_Name
+      value: AngelFish_Amarillo
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d5ae61baf640f8e4faab01ef89756c38, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2098472158487719958}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8067456049071037106}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7648945596923067308}
+  m_SourcePrefab: {fileID: 100100000, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+--- !u!1 &7290738020081696288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c9fb3659c033fa74080cc5761161c12b, type: 3}
+  m_PrefabInstance: {fileID: 7632631908532896625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2098472158487719958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7290738020081696288}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.60709476, y: 1.306292, z: 1.4812045}
+  m_Center: {x: -0.02089262, y: -0.15314603, z: 0.014354467}
+--- !u!54 &8067456049071037106
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7290738020081696288}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &7648945596923067308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7290738020081696288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963e80a5efa4e3a4f98c4282ae3897b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishManager
+  audioSource: {fileID: 0}
+  attackSound: {fileID: 0}
+  hurtSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  attackEffect: {fileID: 0}
+  hitEffect: {fileID: 0}
+  deathEffect: {fileID: 0}
+  baseSpeed: 20
+  speedBoost: 0
+  lifeLevel: 10
+  rbFish: {fileID: 0}
+  player: {fileID: 0}

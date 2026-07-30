@@ -7,6 +7,7 @@ public class FishManager : Character
     public float speedBoost;
     private FishSpawner fishSpawner;
     private bool isWaiting = false;
+    public int lifeLevel;
     [SerializeField] private Rigidbody rbFish;
     [SerializeField] private GameObject player;
 
@@ -17,8 +18,8 @@ public class FishManager : Character
         player = GameObject.Find("Submarino");
         fishSpawner = GameObject.Find("FishSpawner").GetComponent<FishSpawner>();
         GetBoost();
-        setMaxHealth(20);
-        
+        setMaxHealth(lifeLevel);
+        setHealth();
     }
 
     void GetBoost(){
@@ -61,6 +62,7 @@ public class FishManager : Character
             case "Missil":
                 Debug.Log("Auch");
                 takeDamage(2);
+                Destroy(collision.gameObject);
                 break;
         }
     }
