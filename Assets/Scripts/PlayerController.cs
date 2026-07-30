@@ -115,7 +115,7 @@ public class PlayerController : Character
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            takeDamage(2);
+            takeDamage(1);
             Debug.Log(getHealth());
         }
     }
