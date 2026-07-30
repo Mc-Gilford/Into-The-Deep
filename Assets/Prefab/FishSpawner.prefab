@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3408691628815463850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4794708136444228398}
+  - component: {fileID: 6136340621212815266}
+  m_Layer: 0
+  m_Name: FishSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4794708136444228398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3408691628815463850}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: -0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6136340621212815266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3408691628815463850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcf6166514313794488eedb8a16c42d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishSpawner
+  fishPrefabs:
+  - {fileID: 7290738020081696288, guid: 650240bc63468684c98ada0d732e89a4, type: 3}
+  - {fileID: 5365483355343442033, guid: 820a7355e0c926e409b4d2f9ce4259f8, type: 3}
+  - {fileID: 6179478973605246001, guid: 3bbaa7daae8f9a1488850971d9d0782b, type: 3}
+  - {fileID: 5662024566619510534, guid: ef27a1b8559f3374780cd49da21cca28, type: 3}
+  - {fileID: 3899776978438392025, guid: d60383752df5f744581d1f0f897d5984, type: 3}
+  - {fileID: 6339664993357884278, guid: ef1cc8c2eb6d53b4b9e875bec5e40cbb, type: 3}
+  - {fileID: 3983659393895039711, guid: 8a64acf447dcc2c4a8b95f7a06fd028b, type: 3}
+  objectToFollow: {fileID: 0}
+  numberFish: 1
+  wave: 0
+  speedBoost: 0
