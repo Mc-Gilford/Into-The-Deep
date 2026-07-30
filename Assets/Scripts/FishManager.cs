@@ -17,7 +17,8 @@ public class FishManager : Character
         player = GameObject.Find("Submarino");
         fishSpawner = GameObject.Find("FishSpawner").GetComponent<FishSpawner>();
         GetBoost();
-        setMaxHealth(10);
+        setMaxHealth(20);
+        
     }
 
     void GetBoost(){
@@ -47,9 +48,20 @@ public class FishManager : Character
         
         if(collision.gameObject.tag=="Player")
         {
-            Debug.Log("Auch");
-            rbFish.linearVelocity = Vector3.zero;
-            StartCoroutine(LettingPlayerEscape());
+            
+        }
+
+        switch(collision.gameObject.tag)
+        {
+            case "Player":
+                Debug.Log("Munch");
+                rbFish.linearVelocity = Vector3.zero;
+                StartCoroutine(LettingPlayerEscape());
+                break;
+            case "Missil":
+                Debug.Log("Auch");
+                takeDamage(2);
+                break;
         }
     }
 
@@ -58,5 +70,6 @@ public class FishManager : Character
         isWaiting=true;
         yield return new WaitForSeconds(5);
         isWaiting=false;
-    }    
+    }
+
 }
