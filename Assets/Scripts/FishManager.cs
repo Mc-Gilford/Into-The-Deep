@@ -6,6 +6,7 @@ public class FishManager : Character
     [SerializeField] private float baseSpeed = 30.0f;
     public float speedBoost;
     private FishSpawner fishSpawner;
+    private GameManager gameManager;
     private bool isWaiting = false;
     public int lifeLevel;
     [SerializeField] private Rigidbody rbFish;
@@ -17,6 +18,8 @@ public class FishManager : Character
         rbFish = GetComponent<Rigidbody>();
         player = GameObject.Find("Submarino");
         fishSpawner = GameObject.Find("FishSpawner").GetComponent<FishSpawner>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
         GetBoost();
         setMaxHealth(lifeLevel);
         setHealth();
@@ -31,7 +34,7 @@ public class FishManager : Character
     void Update()
     {
         //Debug.Log(getHealth());
-        if(!isWaiting)
+        if(!isWaiting && player!= null)
         {
             ChasePlayer();
         }
@@ -40,6 +43,7 @@ public class FishManager : Character
 
     public void ChasePlayer()
     {
+
         Vector3 lookDirection = (player.transform.position - transform.position).normalized;
         rbFish.AddForce(lookDirection* baseSpeed * Time.deltaTime);
     }
@@ -58,6 +62,7 @@ public class FishManager : Character
                 Debug.Log("Munch");
                 rbFish.linearVelocity = Vector3.zero;
                 StartCoroutine(LettingPlayerEscape());
+                gameManager.getHit();
                 break;
             case "Missil":
                 Debug.Log("Auch");
