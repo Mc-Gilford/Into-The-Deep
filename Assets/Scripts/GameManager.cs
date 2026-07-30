@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
 
     private string finalMessage;
     private string winMessage="Sobreviviste";
-    private string defeatMessage="Fin del juego";
+    private string defeatMessage="Perdiste";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
