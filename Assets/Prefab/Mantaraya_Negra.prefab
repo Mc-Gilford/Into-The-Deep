@@ -161,7 +161,7 @@ MonoBehaviour:
   deathSound: {fileID: 0}
   hitEffect: {fileID: 0}
   deathEffect: {fileID: 0}
-  baseSpeed: 60
+  baseSpeed: 80
   speedBoost: 0
   lifeLevel: 0
   rbFish: {fileID: 0}

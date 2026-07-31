@@ -236,7 +236,7 @@ MonoBehaviour:
   twoHits: {fileID: 1465146292}
   oneHit: {fileID: 1049598372}
   timerText: 
-  timeBeforeHelp: 90
+  timeBeforeHelp: 600
   timerDisplay: {fileID: 1239670346}
   resultText: {fileID: 211353865}
   nohits: 0
@@ -1292,18 +1292,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7849690173172574781, guid: 0dcfae8d6403bba4db0c84454866bcfc,
         type: 3}
+      propertyPath: maxSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7849690173172574781, guid: 0dcfae8d6403bba4db0c84454866bcfc,
+        type: 3}
       propertyPath: lifeLevel
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7849690173172574781, guid: 0dcfae8d6403bba4db0c84454866bcfc,
         type: 3}
       propertyPath: moveSpeed
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7849690173172574781, guid: 0dcfae8d6403bba4db0c84454866bcfc,
         type: 3}
       propertyPath: missileSpeed
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7849690173172574781, guid: 0dcfae8d6403bba4db0c84454866bcfc,
+        type: 3}
+      propertyPath: verticalSpeed
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
