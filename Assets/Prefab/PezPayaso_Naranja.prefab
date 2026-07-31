@@ -88,7 +88,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bd2bec52da242794b8d6629c425d7c0c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 9153940124599264911}
+      addedObject: {fileID: 6760097454179451394}
   m_SourcePrefab: {fileID: 100100000, guid: bd2bec52da242794b8d6629c425d7c0c, type: 3}
 --- !u!1 &6339664993357884278 stripped
 GameObject:
@@ -144,7 +144,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5402565, y: 7.136943, z: 13.280693}
   m_Center: {x: -0.0295887, y: 0.73426723, z: -0.043128967}
---- !u!114 &9153940124599264911
+--- !u!114 &6760097454179451394
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,8 +161,8 @@ MonoBehaviour:
   deathSound: {fileID: 0}
   hitEffect: {fileID: 0}
   deathEffect: {fileID: 0}
-  baseSpeed: 20
+  baseSpeed: 60
   speedBoost: 0
-  lifeLevel: 5
+  lifeLevel: 0
   rbFish: {fileID: 0}
   player: {fileID: 0}

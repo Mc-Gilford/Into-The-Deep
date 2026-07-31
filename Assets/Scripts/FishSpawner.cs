@@ -9,9 +9,9 @@ public class FishSpawner : MonoBehaviour
 {
     public List<GameObject> fishPrefabs;
     [SerializeField] public GameObject objectToFollow;
-    [SerializeField] private int numberFish=1;
-    [SerializeField] private int wave=0;
-    public float speedBoost = 0f;
+    [SerializeField] private int numberFish=4;
+    [SerializeField] private int wave=1;
+    public float speedBoost =0f;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -43,7 +43,7 @@ public class FishSpawner : MonoBehaviour
 
         if(wave > 1)
         {
-            speedBoost += 0.2f;
+            speedBoost += 20f;
         }
         
     }

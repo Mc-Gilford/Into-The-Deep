@@ -80,15 +80,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4298f50d2f11eec479dbf3a6bcb20028,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7744895923540727570}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4298f50d2f11eec479dbf3a6bcb20028,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 4542617738500291900}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4298f50d2f11eec479dbf3a6bcb20028,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 6726091209483407470}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4298f50d2f11eec479dbf3a6bcb20028,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3982205417429438578}
   m_SourcePrefab: {fileID: 100100000, guid: 4298f50d2f11eec479dbf3a6bcb20028, type: 3}
 --- !u!1 &6179478973605246001 stripped
 GameObject:
@@ -96,28 +96,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6413269575671040352}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7744895923540727570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6179478973605246001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 963e80a5efa4e3a4f98c4282ae3897b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FishManager
-  audioSource: {fileID: 0}
-  hurtSound: {fileID: 0}
-  deathSound: {fileID: 0}
-  hitEffect: {fileID: 0}
-  deathEffect: {fileID: 0}
-  baseSpeed: 20
-  speedBoost: 0
-  lifeLevel: 14
-  rbFish: {fileID: 0}
-  player: {fileID: 0}
 --- !u!54 &4542617738500291900
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -166,3 +144,25 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.6034398, y: 5.122539, z: 11.740907}
   m_Center: {x: 0.088006735, y: 0.11755967, z: -1.3485599}
+--- !u!114 &3982205417429438578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6179478973605246001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963e80a5efa4e3a4f98c4282ae3897b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishManager
+  audioSource: {fileID: 0}
+  hurtSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  hitEffect: {fileID: 0}
+  deathEffect: {fileID: 0}
+  baseSpeed: 60
+  speedBoost: 0
+  lifeLevel: 0
+  rbFish: {fileID: 0}
+  player: {fileID: 0}
