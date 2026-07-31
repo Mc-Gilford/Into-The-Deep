@@ -5,10 +5,10 @@ using System.Collections;
 public class PlayerController : Character
 {
     [Header("Movement")]
-    [SerializeField] private float moveSpeed = 20f;
+    [SerializeField] private float moveSpeed = 50f;
     [SerializeField] private float rotationSpeed = 60f;
     [SerializeField] private float verticalSpeed = 20f;
-    [SerializeField] private float maxSpeed = 10f;
+    [SerializeField] private float maxSpeed = 100f;
     private float verticalInput = 0f;
     private Rigidbody rb;
     private InputSystem_Actions controls;

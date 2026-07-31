@@ -376,6 +376,36 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93a5fcde04a499943bd84b21f9b3bd4f, type: 3}
+--- !u!1 &190190980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3408691628815463850, guid: 3fe033d22a924de4b8f31fc04cffe259,
+    type: 3}
+  m_PrefabInstance: {fileID: 1683206533}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &190190983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190190980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcf6166514313794488eedb8a16c42d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishSpawner
+  fishPrefabs:
+  - {fileID: 3983659393895039711, guid: 8a64acf447dcc2c4a8b95f7a06fd028b, type: 3}
+  - {fileID: 6339664993357884278, guid: ef1cc8c2eb6d53b4b9e875bec5e40cbb, type: 3}
+  - {fileID: 3899776978438392025, guid: d60383752df5f744581d1f0f897d5984, type: 3}
+  - {fileID: 5662024566619510534, guid: ef27a1b8559f3374780cd49da21cca28, type: 3}
+  - {fileID: 6179478973605246001, guid: 3bbaa7daae8f9a1488850971d9d0782b, type: 3}
+  - {fileID: 5365483355343442033, guid: 820a7355e0c926e409b4d2f9ce4259f8, type: 3}
+  - {fileID: 7290738020081696288, guid: 650240bc63468684c98ada0d732e89a4, type: 3}
+  objectToFollow: {fileID: 0}
+  numberFish: 4
+  wave: 1
+  speedBoost: 0
 --- !u!114 &211353865 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7994118049872964416, guid: 722b8cb867dbe7c409a35f7053b2d655,
@@ -660,12 +690,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!1 &1671928244 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7294296792000772488, guid: 0dcfae8d6403bba4db0c84454866bcfc,
-    type: 3}
-  m_PrefabInstance: {fileID: 7183396790435622008}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1683206533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -732,27 +756,67 @@ PrefabInstance:
     - target: {fileID: 6136340621212815266, guid: 3fe033d22a924de4b8f31fc04cffe259,
         type: 3}
       propertyPath: wave
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6136340621212815266, guid: 3fe033d22a924de4b8f31fc04cffe259,
         type: 3}
       propertyPath: numberFish
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6136340621212815266, guid: 3fe033d22a924de4b8f31fc04cffe259,
         type: 3}
       propertyPath: speedBoost
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6136340621212815266, guid: 3fe033d22a924de4b8f31fc04cffe259,
         type: 3}
       propertyPath: objectToFollow
       value: 
-      objectReference: {fileID: 1671928244}
-    m_RemovedComponents: []
+      objectReference: {fileID: 0}
+    - target: {fileID: 6136340621212815266, guid: 3fe033d22a924de4b8f31fc04cffe259,
+        type: 3}
+      propertyPath: fishPrefabs.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6136340621212815266, guid: 3fe033d22a924de4b8f31fc04cffe259,
+        type: 3}
+      propertyPath: 'fishPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6136340621212815266, guid: 3fe033d22a924de4b8f31fc04cffe259,
+        type: 3}
+      propertyPath: 'fishPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6136340621212815266, guid: 3fe033d22a924de4b8f31fc04cffe259,
+        type: 3}
+      propertyPath: 'fishPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6136340621212815266, guid: 3fe033d22a924de4b8f31fc04cffe259,
+        type: 3}
+      propertyPath: 'fishPrefabs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6136340621212815266, guid: 3fe033d22a924de4b8f31fc04cffe259,
+        type: 3}
+      propertyPath: 'fishPrefabs.Array.data[4]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6136340621212815266, guid: 3fe033d22a924de4b8f31fc04cffe259,
+        type: 3}
+      propertyPath: 'fishPrefabs.Array.data[5]'
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6136340621212815266, guid: 3fe033d22a924de4b8f31fc04cffe259, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3408691628815463850, guid: 3fe033d22a924de4b8f31fc04cffe259,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 190190983}
   m_SourcePrefab: {fileID: 100100000, guid: 3fe033d22a924de4b8f31fc04cffe259, type: 3}
 --- !u!4 &1770192304 stripped
 Transform:
@@ -1018,6 +1082,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: reloadScene
       objectReference: {fileID: 0}
+    - target: {fileID: 6864003742990148372, guid: 722b8cb867dbe7c409a35f7053b2d655,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864003742990148372, guid: 722b8cb867dbe7c409a35f7053b2d655,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864003742990148372, guid: 722b8cb867dbe7c409a35f7053b2d655,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864003742990148372, guid: 722b8cb867dbe7c409a35f7053b2d655,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 6925016883620590633, guid: 722b8cb867dbe7c409a35f7053b2d655,
         type: 3}
       propertyPath: m_IsActive
@@ -1128,6 +1212,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5142533095418391704, guid: 087bb5a81074ea64886ef003506b0d2b,
+        type: 3}
+      propertyPath: missileSpeed
+      value: 80
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1209,7 +1298,12 @@ PrefabInstance:
     - target: {fileID: 7849690173172574781, guid: 0dcfae8d6403bba4db0c84454866bcfc,
         type: 3}
       propertyPath: moveSpeed
-      value: 30
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7849690173172574781, guid: 0dcfae8d6403bba4db0c84454866bcfc,
+        type: 3}
+      propertyPath: missileSpeed
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
